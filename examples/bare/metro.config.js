@@ -1,6 +1,9 @@
 const path = require('path');
 const {makeMetroConfig} = require('@rnx-kit/metro-config');
 
+// Path to the root react-native-video package
+const rnvPath = path.resolve(__dirname, '../..');
+
 module.exports = makeMetroConfig({
   transformer: {
     getTransformOptions: async () => ({
